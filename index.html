@@ -1,40 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Мій сайт</title>
+<meta charset="UTF-8">
+<title>Шоколада Мрія</title>
 
-  <style>
-    body {
-      text-align: center;
-      font-family: Arial;
-      background-color: #fff8f0;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    text-align: center;
+}
 
-    .title {
-      font-size: 80px;
-      color: brown;
-      margin-top: 50px;
-    }
+/* Головний заголовок */
+h1 {
+    font-size: 60px;
+    color: #4b2e2e;
+    margin-top: 40px;
+}
 
-    .text {
-      font-size: 24px;
-      margin-top: 20px;
-    }
-  </style>
+/* Секції */
+.section {
+    width: 70%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+h2 {
+    color: #6b3e2e;
+}
+
+img {
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Шоколадна анімація */
+.choco {
+    position: fixed;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(#5a2e0f, #3b1f0a);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.drop {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background: #4b2e2e;
+    border-radius: 50%;
+    animation: drip 3s infinite;
+}
+
+@keyframes drip {
+    0% { top: -100px; }
+    100% { top: 100%; }
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="title">
-    🍫 ШОКОЛАДНА МРІЯ 🍫
-  </div>
+<div class="choco left">
+    <div class="drop" style="left:10px; animation-delay:0s;"></div>
+    <div class="drop" style="left:20px; animation-delay:1s;"></div>
+</div>
 
-  <div class="text">
-    <h1>Привіт! 👋</h1>
-    <p>з тебе шоколадка 😋</p>
-  </div>
+<div class="choco right">
+    <div class="drop" style="left:10px; animation-delay:0.5s;"></div>
+    <div class="drop" style="left:20px; animation-delay:1.5s;"></div>
+</div>
+
+<h1>ШОКОЛАДА МРІЯ 🍫</h1>
+
+<div class="section">
+    <h2>📜 Як з'явився шоколад</h2>
+    <p>Шоколад виник понад 3000 років тому у цивілізаціях майя та ацтеків. Вони робили напій з какао-бобів і вважали його напоєм богів.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Cocoa_beans.jpg">
+</div>
+
+<div class="section">
+    <h2>🌱 З чого роблять шоколад</h2>
+    <p>Основний інгредієнт — какао-боби. До них додають цукор, молоко та інші складники залежно від виду шоколаду.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Chocolate_%28blue_background%29.jpg">
+</div>
+
+<div class="section">
+    <h2>⚠️ Що буде, якщо їсти багато шоколаду</h2>
+    <p>Надмірне споживання може призвести до набору ваги, проблем із зубами та навіть до поганого самопочуття.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Chocolate_cake.jpg">
+</div>
+
+<div class="section">
+    <h2>🏆 Найпопулярніша фірма</h2>
+    <p>Сьогодні однією з найвідоміших компаній є <b>Ferrero</b> та <b>Milka</b>.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Milka_Alpine_Milk_Chocolate.jpg">
+</div>
+
+<div class="section">
+    <h2>🤓 Цікаві факти</h2>
+    <p>
+        🍫 Білий шоколад не містить какао-порошку<br>
+        🍫 Шоколад підвищує настрій<br>
+        🍫 Найбільша плитка шоколаду важила понад 5 тонн!
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Chocolate.jpg">
+</div>
 
 </body>
 </html>
